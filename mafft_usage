@@ -1,0 +1,7 @@
+#在linux系统下直接使用，是作为一个交互式界面，一个个命令输入进去使用
+mafft
+input()#filename
+output()
+sorted
+auto
+#随后不添加其他选项直接回车
