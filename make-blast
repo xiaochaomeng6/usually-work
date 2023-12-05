@@ -1,0 +1,10 @@
+#从makeblast到blastn
+
+
+
+
+
+/zhlab/software/blast/ncbi-blast-2.14.0+/bin/makeblastdb  -in /bio/hxl/monkeypoxvirus/human/USA/all_usa.fasta -out /bio/hxl/monkeypoxvirus/human/USA/ku/usa -dbtype nucl
+
+
+/zhlab/software/blast/ncbi-blast-2.14.0+/bin/blastn -query /bio/hxl/monkeypoxvirus/human/USA/ref1.fas -db /bio/hxl/monkeypoxvirus/human/USA/ku/usa -out /bio/hxl/monkeypoxvirus/human/USA/out_ref1_usa.fasta -evalue 1E-5 -num_threads 50 -outfmt "6 delim=  qaccver saccver pident qlen qcovs qcovhsp qcovus length mismatch gapopen qstart qend sstart send evalue bitscore" -max_target_seqs 10000 -max_hsps 50000
